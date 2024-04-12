@@ -20,25 +20,22 @@
       <!-- Navbar start 
         https://getbootstrap.com/docs/5.3/components/navbar/
       -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Meu Portfólio</a>
+          <a class="navbar-brand" href="#">Navbar</a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#servico">Serviços</a>
+                <a class="nav-link" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfólio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
           </div>
@@ -50,69 +47,84 @@
 
     <!--Home start-->
     <section id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col">
+      <div>
+        <div>
+          <div>
+            <div>
               <img src="img/profile.png" alt="Imagem do perfil" />
             </div>
-            <div class="col">
+          </div>
+          <div>
+            <div>
               <p>Olá!! Eu sou</p>
-              <h1>Eduardo Gomes</h1>
-              <h2>Analista de Sistemas, Gerente de Projetos e Desenvolvedor</h2>
+              <h1>Ricardo M. Kondo</h1>
+              <h2>Professor, Analista de Sistemas e Desenvolvedor</h2>
               <p>Seja bem-vindo ao meu portfólio de apresentação.</p>
               <a href="#portifolio">Meus Trabalhos</a>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!--Home end-->
 
     <!--Sobre start-->
     <section id="sobre">
-      <div class="container">
+      <div>
         <div>
           <div>
-            <div class="d-flex justify-content-center">
-              <h2>Sobre Mim</h2>
+            <div>
+              <h2>Sobre Min</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
+        <div>
+          <div>
             <div>
-              <h3>Formação</h3>              
+              <h3>Formação</h3>
               <p>
-                Graduação Bacharel em Sistemas de Informação pela Fundação
+                Mestrado Acadêmico em Ciência da Computação pela Faculdade de
+                Computação da Fundação Universidade Federal de Mato Grosso do
+                Sul – UFMS.
+              </p>
+              <p>
+                Graduação Bacharel em Ciências da Computação pela Fundação
                 Universidade Federal de Mato Grosso do Sul - UFMS.
               </p>
             </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                  <h4>99</h4>
+            <div>
+              <div>
+                <div>
+                  <h4>10</h4>
                   <p>Anos de Experiência</p>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                  <h4>+8000</h4>
+              </div>
+              <div>
+                <div>
+                  <h4>5</h4>
+                  <p>Anos de Experiência Docência</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h4>8</h4>
                   <p>Projetos Executados</p>
                 </div>
               </div>
             </div>
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <a href="#">Download CV</a>
-                  </div>
-                <div class="social-links col">
-                  <a href="https://facebook.com/" class="text-dark me-2" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/" class="text-dark me-2" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a href="https://www.instagram.com" class="text-dark me-2" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
+            <div>
+              <div>
+                <a href="#">Download CV</a>
+                <div class="social-links">
+                  <a href="https://facebook.com/" class="text-dark me-2"
+                    ><i> </i
+                  ></a>
+                  <a href="https://www.linkedin.com/" class="text-dark me-2"
+                    ><i> </i
+                  ></a>
+                  <a href="https://www.instagram.com" class="text-dark me-2"
+                    ><i> </i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -120,7 +132,19 @@
           <!-- Progress Bar
             https://getbootstrap.com/docs/5.3/components/progress/
           -->
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div>
+            <!-- Progress Bar teste -->
+            <div class="progress"
+            role="progressbar"
+            aria-label="Example with label"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100">
+                <div class="progress-bar" style="width: 25%">25%</div>
+            </div>
+              
+            <!-- Progress Bar teste -->
+            
             <div>
               <h3>HTML</h3>
               <div class="progress"
@@ -128,91 +152,103 @@
                 aria-label="Example 1px high"
                 aria-valuenow="25"
                 aria-valuemin="0"
-                aria-valuemax="100"
-                >
-                <div class="progress-bar" style="width: 25%"></div>
+                aria-valuemax="100">
+                <div class="progress-bar" style="width: 25%">25%</div>
               </div>
             </div>
             <div>
               <h3>CSS</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="30"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 30%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 30%"></div>
               </div>
             </div>
             <div>
               <h3>JavaScript</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="40"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 40%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 40%"></div>
               </div>
             </div>
             <div>
               <h3>PHP</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="45"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 45%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 45%"></div>
               </div>
             </div>
             <div>
               <h3>Banco de Dados</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="50"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 50%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 50%"></div>
               </div>
             </div>
 
             <div>
               <h3>Gerência de Projetos</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="80"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 80%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 80%"></div>
               </div>
             </div>
-            <div> 
+            <div>
               <h3>Modelagem de Processos</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="85"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 85%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 85%"></div>
               </div>
             </div>
             <div>
               <h3>Engenharia de Requisitos</h3>
-              <div class="progress"
+              <div
                 role="progressbar"
                 aria-label="Example 1px high"
                 aria-valuenow="90"
                 aria-valuemin="0"
-                aria-valuemax="100">
-                <div class="progress-bar" style="width: 90%"></div>
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div style="width: 90%"></div>
               </div>
             </div>
           </div>
-          <!--progress bar-->
         </div>
       </div>
     </section>
@@ -220,16 +256,16 @@
 
     <!-- Serviços start-->
     <section id="servico">
-      <div class="container">
+      <div>
         <div>
           <div>
-            <div class="d-flex justify-content-center">
+            <div>
               <h2>Projetos Desenvolvidos</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div>
+          <div>
             <div>
               <div>
                 <i></i>
@@ -238,7 +274,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="col">
+          <div>
             <div>
               <div>
                 <i></i>
@@ -247,7 +283,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="col">
+          <div>
             <div>
               <div>
                 <i></i>
@@ -263,52 +299,52 @@
 
     <!-- Portfolio start -->
     <section id="portfolio">
-      <div class="container">
+      <div>
         <div>
           <div>
-            <div class="d-flex justify-content-center">
+            <div>
               <h2>Últimos Trabalhos</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img class="col-12" src="img/portfolio/1.jpg" alt="Imagem 1 do portfolio" />
+        <div>
+          <div>
+            <img src="img/portfolio/1.jpg" alt="Imagem 1 do portfolio" />
             <h3>Seção do Time</h3>
             <p>
               <a href="#">Demo</a>
             </p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img class="col-12" src="img/portfolio/2.jpg" alt="Imagem 2 do portfolio" />
+          <div>
+            <img src="img/portfolio/2.jpg" alt="Imagem 2 do portfolio" />
             <h3>App Landing Page</h3>
             <p>
               <a href="#">Demo</a>
             </p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img class="col-12" src="img/portfolio/3.jpg" alt="Imagem 3 do portfolio" />
+          <div>
+            <img src="img/portfolio/3.jpg" alt="Imagem 3 do portfolio" />
             <h3>E-commerce</h3>
             <p>
               <a href="#">Demo</a>
             </p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img class="col-12" src="img/portfolio/4.jpg" alt="Imagem 4 do portfolio" />
+          <div>
+            <img src="img/portfolio/4.jpg" alt="Imagem 4 do portfolio" />
             <h3>Stream App</h3>
             <p>
               <a href="#">Demo</a>
             </p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img class="col-12" src="img/portfolio/5.jpg" alt="Imagem 5 do portfolio" />
+          <div>
+            <img src="img/portfolio/5.jpg" alt="Imagem 5 do portfolio" />
             <h3>Portfólio</h3>
             <p>
               <a href="#">Demo</a>
             </p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img class="col-12" src="img/portfolio/6.jpg" alt="Imagem 6 do portfolio" />
+          <div>
+            <img src="img/portfolio/6.jpg" alt="Imagem 6 do portfolio" />
             <h3>Galeria de Fotos</h3>
             <p>
               <a href="#">Demo</a>
@@ -321,19 +357,19 @@
 
     <!-- Contato start -->
     <section id="contato">
-      <div class="container">
-        <div class="container">
+      <div>
+        <div>
           <div>
-            <div class="d-flex justify-content-center">
+            <div>
               <h2>Contato</h2>
             </div>
           </div>
         </div>
         <div>
-          <div class="container">
+          <div>
             <div>
               <div>
-                <i class="bi bi-envelope"></i>
+                <i> </i>
               </div>
               <div>
                 <h3>E-mail</h3>
@@ -342,7 +378,7 @@
             </div>
             <div>
               <div>
-                <i class="bi bi-telephone"> </i>
+                <i> </i>
               </div>
               <div>
                 <h3>Telefone</h3>
@@ -360,24 +396,24 @@
             </div>
           </div>
           <div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div>
               <form action="">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <input class="col-12" type="text" placeholder="Nome" />
+                <div>
+                  <div>
+                    <input type="text" placeholder="Nome" />
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <input class="col-12" type="text" placeholder="E-mail" />
+                  <div>
+                    <input type="text" placeholder="E-mail" />
                   </div>
                 </div>
                 <div>
                   <div>
-                    <input class="col-12" type="text" placeholder="Assunto" />
+                    <input type="text" placeholder="Assunto" />
                   </div>
                 </div>
                 <div>
                   <div>
-                    <textarea class="col-12" rows="5" placeholder="Mensagem"> </textarea>
+                    <textarea rows="5" placeholder="Mensagem"> </textarea>
                   </div>
                 </div>
                 <div>
