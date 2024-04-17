@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Personal Portfolio - Bootstrap 5</title>
+    <title>Portfolio Pessoal</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -20,11 +20,21 @@
       <!-- Navbar start 
         https://getbootstrap.com/docs/5.3/components/navbar/
       -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Meu Portfólio</a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <a class="navbar-brand" href="#">Meu Portfolio</a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
               </li>
@@ -60,7 +70,7 @@
               <h1>Eduardo Gomes</h1>
               <h2>Analista de Sistemas, Gerente de Projetos e Desenvolvedor</h2>
               <p>Seja bem-vindo ao meu portfólio de apresentação.</p>
-              <a href="#portifolio">Meus Trabalhos</a>
+              <a class="alert alert-danger" href="#portifolio">Meus Trabalhos</a>
             </div>
           </div>
         </div>
@@ -396,10 +406,10 @@
     <!-- Footer start -->
 
     <footer>
-      <div>
+      <div class="container">
         <div>
-          <div>
-            <p>&copy; 2024 Kondo</p>
+          <div class="d-flex justify-content-center">
+            <p>&copy; 2024 Eduardo Gomes</p>
           </div>
         </div>
       </div>
