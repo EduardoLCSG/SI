@@ -1,30 +1,53 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #967a64;
 }
 .navItens{
     display: flex;
     list-style: none;
-
+}
+a:visited>.navItens{
+    color: white;    
 }
 nav{
     display: flex;
     justify-content: center;
-    
+    width: 100%;    
 }
 .navItens>li{
     padding: 10px;
+    text-align: center;
 }
 ul>nav{
     display: flex;
 }
-aside{
-    display: flex;
+aside{    
     float: right;
-    height: 100vb;
-    width: 25%;
+    height: 100vh;
+    width: 25vw;
 }
 img{
     width: 250px;
     height: 250px;
 }
+.asideimg{
+    width:50%;
+    height:min-content;
+    
 
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+fieldset{
+    width:fit-content;
+}
+#fnome{
+    width:80%;
+}
+#femail{
+    width: 80%;
+}
